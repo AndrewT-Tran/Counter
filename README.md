@@ -28,18 +28,18 @@ As part of this assignment, please start with the following features first:
 #### Some Helpful Tips
 
 We can't increment something that doesn't exist! Here's how to check if a key exists in session yet:
-
+```
 if 'key\_name' in session:
     print('key exists!')
 else:
     print("key 'key\_name' does NOT exist")
-copy
+```
 
 If we want to get rid of what is currently stored in session:
-
+```
 session.clear()		\# clears all keys
 session.pop('key\_name')		\# clears a specific keycopy
-
+```
 *   Create a new Flask project called counter
     
 *   Have the root route render a template that displays the number of times the client has visited this site. Refresh the page several times to ensure the counter is working.
