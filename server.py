@@ -27,7 +27,7 @@ def decrease():
     return redirect(url_for("index"))
 
 
-@app.route("/destroy_session")
+@app.route("/destroy_session/", methods=["POST"])
 def reset():
     session.clear()
     return redirect("/")
